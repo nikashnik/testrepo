@@ -1,0 +1,9 @@
+Deploy the Application to Azure App Service
+Zip the application files.
+Use Azure CLI to deploy the application.
+
+zip -r app.zip app.py requirements.txt
+az webapp deploy --resource-group example-resources --name example-appservice --src-path app.zip
+
+
+******The app is already exposed to the internet via the Azure App Service's default domain (e.g., http://example-appservice.azurewebsites.net).*********
